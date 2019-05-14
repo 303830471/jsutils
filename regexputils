@@ -1,0 +1,4 @@
+
+var reg = new RegExp( '--------' , "g" );
+var newstr = $("#ThisFlowMindInfo").val().replace( reg , '' );
+$("#ThisFlowMindInfo").val(newstr);
