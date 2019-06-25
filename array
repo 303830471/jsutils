@@ -1,0 +1,44 @@
+//-----Array 扩展方法（begin）------
+//检索某项是否存在，不存在则返回-1
+Array.prototype.indexOf = function(item) {   
+	var length = this.length;    
+	if (length != 0) {   
+       for (var index = 0; index < length; index++) {   
+            if (this[index] == item) {   
+                return index;   
+            }   
+        }   
+    }   
+  
+    return -1;   
+}   
+//拷贝数组
+Array.prototype.clone=function(){     
+	return this.slice(0); 
+}
+
+
+//从数组中删除某一项
+Array.prototype.remove = function(item) {   
+    var index = this.indexOf(item);   
+  
+    if (index >= 0) {   
+        this.splice(index, 1);   
+    }   
+}   
+
+//数组去重
+Array.prototype.unique = function(){
+    var a = [];
+    var l = this.length;
+    for (var i = 0; i < l; i++) {
+        for (var j = i + 1; j < l; j++) {
+            if (this[i] === this[j]) 
+                j = ++i;
+        }
+        a.push(this[i]);
+    }
+    return a;
+};
+
+//---Array 扩展方法（end）----------
