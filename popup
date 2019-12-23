@@ -1,0 +1,82 @@
+function de(){console.log("hah12312")};popup({"alerttitle":"测试","alertmsg":"hahah","alerttype":"msg","callback":de});
+引用JavaScript
+http://oastatic.sugon.com/OA/v8/component.js和vue.js及jQuery
+样式
+.alert_w {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+.alert_shadow {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1000;
+    left: 0px;
+}
+
+.alert_w_window {
+    width: 80%;
+    max-width: 450px;
+    z-index: 100001;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 7px 3px #D0D0D9;
+}
+
+.alert_w_header {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    background-color: #b0181f;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.alert_w_main {
+    padding: 20px;
+    border-bottom: 1px solid #dedede;
+}
+
+.alert_w_bottom {
+    height: 47px;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.alert_w_bottom .confirm {
+    width: 80px;
+    height: 28px;
+    border-radius: 5px;
+    line-height: 28px;
+    background-color: #b0181f;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 9px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.alert_w_bottom .cancel {
+    width: 80px;
+    height: 28px;
+    border-radius: 5px;
+    line-height: 28px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 9px;
+    margin-right: 20px;
+    font-size: 14px;
+    border: 1px #dedede solid;
+}
